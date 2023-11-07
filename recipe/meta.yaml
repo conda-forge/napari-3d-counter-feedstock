@@ -26,10 +26,10 @@ requirements:
     - matplotlib-base
     - napari
     - numpy
-	  - pandas
+    - pandas
     - python >=3.8
     - qtpy
-	  - scikit-image
+    - scikit-image
 
 test:
   imports:
