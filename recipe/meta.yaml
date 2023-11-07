@@ -22,7 +22,6 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - magicgui
     - matplotlib-base
     - napari
     - numpy
