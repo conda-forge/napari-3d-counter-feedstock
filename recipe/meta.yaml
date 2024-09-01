@@ -23,7 +23,7 @@ requirements:
     - wheel
   run:
     - matplotlib-base
-    - napari ==0.5.2
+    - napari ==0.5.3
     - numpy
     - pandas
     - python >=3.9
