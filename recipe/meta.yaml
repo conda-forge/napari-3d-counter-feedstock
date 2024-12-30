@@ -22,8 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - matplotlib-base
-    - napari ==0.5.4
+    - napari ==0.5.5
     - numpy
     - pandas
     - python >=3.9
