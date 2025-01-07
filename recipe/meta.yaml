@@ -1,13 +1,13 @@
 {% set name = "napari-3d-counter" %}
-{% set version = "0.3.6" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1eb6560ed36919a2e4047d75bbad60bcd326ce8c190176b58c8eb0d5e25032c3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d350f2561f880c708d882aaf0cd6fd77b396379dee0a2922729f6a61cbc26d1e
 
 build:
   noarch: python
@@ -22,8 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - matplotlib-base
-    - napari ==0.5.4
+    - napari ==0.5.5
     - numpy
     - pandas
     - python >=3.9
