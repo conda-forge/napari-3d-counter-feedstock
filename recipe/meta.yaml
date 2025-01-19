@@ -12,12 +12,12 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=42.0.0
     - setuptools-scm
     - wheel
@@ -25,7 +25,7 @@ requirements:
     - napari ==0.5.5
     - numpy
     - pandas
-    - python >=3.9
+    - python >={{ python_min }}
     - qtpy
     - scikit-image
 
@@ -38,6 +38,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/napari-3d-counter
