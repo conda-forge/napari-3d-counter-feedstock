@@ -1,5 +1,5 @@
 {% set name = "napari-3d-counter" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a9ffc33658119649909ddbdfcebc82c348a27b274693f68d6c2b1a21edbdf87f
+  sha256: d8af5d00a1929a5e03956efcbab75e58160ce68edbfc6f97580d776fdaaa05e8
 
 build:
   noarch: python
