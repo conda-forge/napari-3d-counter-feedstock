@@ -1,5 +1,5 @@
 {% set name = "napari-3d-counter" %}
-{% set version = "0.5.11" %}
+{% set version = "0.5.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 637af62a6d6ba7dd3938df260bf2bd9cbcf5cfc8d98e77994fc2732470d2d039
+  sha256: 0a6e4b58c7d79142a0752fdeefc54a5a8378593ce2e9aa57c9794408ea44bec4
 
 build:
   noarch: python
@@ -21,8 +21,9 @@ requirements:
     - setuptools >=42.0.0
     - setuptools-scm
     - wheel
+    - mesalib
   run:
-    - napari ==0.7.*
+    - napari ==0.8.*
     - numpy
     - pandas
     - python >={{ python_min }}
@@ -37,8 +38,11 @@ test:
     - pip check
   requires:
     - pip
-    - pyqt
+    - pyqt6
     - python {{ python_min }}
+    - libgles
+  script_env:
+    - QT_QPA_PLATFORM=offscreen
 
 about:
   home: https://pypi.org/project/napari-3d-counter

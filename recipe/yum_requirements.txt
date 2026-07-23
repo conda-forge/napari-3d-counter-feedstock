@@ -1,2 +1,3 @@
-mesa-libGL-devel
-xorg-x11-server-Xvfb
+mesa-libGL
+mesa-libEGL
+mesa-libGLES
