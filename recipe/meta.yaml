@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,7 +21,6 @@ requirements:
     - setuptools >=42.0.0
     - setuptools-scm
     - wheel
-    - mesalib
   run:
     - napari ==0.8.*
     - numpy
@@ -40,9 +39,7 @@ test:
     - pip
     - pyqt6
     - python {{ python_min }}
-    - libgles
-  script_env:
-    - QT_QPA_PLATFORM=offscreen
+
 
 about:
   home: https://pypi.org/project/napari-3d-counter
