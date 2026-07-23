@@ -21,6 +21,7 @@ requirements:
     - setuptools >=42.0.0
     - setuptools-scm
     - wheel
+    - mesalib
   run:
     - napari ==0.8.*
     - numpy
@@ -28,6 +29,7 @@ requirements:
     - python >={{ python_min }}
     - qtpy
     - scikit-image
+    - mesalib
 
 test:
   imports:
