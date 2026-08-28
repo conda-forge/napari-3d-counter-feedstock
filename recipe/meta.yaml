@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - napari ==0.8.*
+    - napari ==0.9.0
     - numpy
     - pandas
     - python >={{ python_min }}
